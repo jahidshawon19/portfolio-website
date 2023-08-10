@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <title>Jahid| Life Berfore Coding</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="about.html" target="_blank">About Me</a>
+            <a href="blogs.html" target="_blank">Blogs</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div id="particles-js"></div>
+
+        <div class="content">
+            <img class="tilt" src="images/portfolio pic.jpg" alt="">
+            <h3> Jahid Hasan <span>Shawon</span> </h3>
+            <p> <span class="typing-text"> </span> </p>
+            <a href="https://drive.google.com/file/d/1ZbOBHC0l-4inT6-gK7JRGPuTJffX8fo7/view" target="_blank"
+                class="btn">Download Resume</a>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+
+
+
+
+    <!-- portfolio section starts  -->
+
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading"> <span> my </span> portfolio </h1>
+
+        <div class="box-container">
+
+            <div class="box tilt">
+                <img src="images/eduverse_home.png" alt="">
+                <div class="content">
+                    <a href="https://eduv.netlify.app/"  target="_blank" class="btn">see project</a>
+                    <a href="eduverse_details.html" target="_blank" class="btn">Details</a>
+                </div>
+            </div>
+            <div class="box tilt">
+                <img src="images/portfolio-6.png" alt="">
+                <div class="content">
+                    <a href="https://delex.netlify.app/"  target="_blank" class="btn">see project</a>
+                    <a href="delivery_details.html" target="_blank" class="btn">Details</a>
+                </div>
+            </div>
+
+            <div class="box tilt">
+                <img src="images/portfolio-1.png" alt="">
+                <div class="content">
+                    <a href="https://artisan-travel-agency.web.app/"  target="_blank" class="btn">see project</a>
+                    <a href="artisan_details.html" target="_blank" class="btn">Details</a>
+                </div>
+            </div>
+
+        
+
+            <div class="box tilt">
+                <img src="images/portfolio-3.jpg" alt="">
+                <div class="content">
+                    <a href="https://shodai-grocery.herokuapp.com/" target="_blank" class="btn">see project</a>
+                    <a href="shodai_details.html" target="_blank" class="btn">Details</a>
+                </div>
+            </div>
+
+            <div class="box tilt">
+                <img src="images/portfolio-4.jpg" alt="">
+                <div class="content">
+                    <a href="https://ctg-plants.herokuapp.com/accounts/login/" target="_blank" class="btn">see project</a>
+                    <a href="cma_details.html" target="_blank" class="btn">Details</a>
+                </div>
+            </div>
+
+            <div class="box tilt">
+                <img src="images/portfolio-5.jpg" alt="">
+                <div class="content">
+                    <a href="https://al-aqsa-app-heroku.herokuapp.com/" target="_blank" class="btn">see project</a>
+                    <a href="aqsa_details.html" target="_blank" class="btn">Details</a>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+    <!-- portfolio section ends -->
+
+
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> contact <span> me </span> </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img class="tilt" src="./images/contact-us.svg" alt="">
+            </div>
+
+            <form action="" onsubmit="sendMail(); reset(); return false;">
+
+                <div class="inputBox">
+                    <input type="text" placeholder="name" id="name">
+                    <input type="email" placeholder="email" id="email">
+                </div>
+
+                <input type="text" placeholder="subject" class="box" id="subject">
+
+                <textarea placeholder="message" name="" id="message" cols="30" rows="10"></textarea>
+
+                <input type="submit" class="btn" value="send message">
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section  -->
+
+    <div class="footer"> created by <span> Jahid Hasan Shawon</span> | all rights reserved! </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- javascript part  -->
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- typed.js link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <!-- particles.js links  -->
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- vanilla-tilt.js link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+    <script>
+
+        let menu = document.querySelector('#menu-bars');
+        let header = document.querySelector('header');
+
+        menu.onclick = () => {
+            menu.classList.toggle('fa-times');
+            header.classList.toggle('active');
+        }
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+        };
+
+        var typed = new Typed('.typing-text', {
+            strings: ['', 'junior software developer', 'working with django', 'working with react js',],
+            loop: true,
+            typeSpeed: 150
+        });
+
+        VanillaTilt.init(document.querySelectorAll('.tilt'), {
+            max: 25
+        });
+
+
+   
+
+    </script>
+
+</body>
+
+</html>

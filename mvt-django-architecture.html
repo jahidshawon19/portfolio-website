@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVT-Django Architecture</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+
+   
+
+
+</head>
+<body>
+    
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand" href="index.html" style="font-weight: bold; color:white">Jahid Hasan</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link" style="color: #e65100" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"  style="color: #e65100" href="about.html">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color: #e65100" href="blogs.html">Blogs</a>
+      </li>
+
+     
+    </ul>
+    
+  </div>
+</nav>
+
+
+<section class="py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="font-weight-bold text-center text-info">MVT-Django Architecture</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="lead">In software engineering, there are several software design patterns. One of them is MVT.MVT means Model, View, Template.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="./images/Control-Flow-Of-MVT.jpg" alt="" class="img-fluid" >
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="lead">
+                        <strong>Model:</strong> Model is for data. Data is coming from database and that can be linked with the model object. <br>
+                        So when you say model in your application you might be having different in entites and every single entity will have its own model object that can be linked with database.
+                    </p>
+                    <p class="lead">
+                        <strong>Template:</strong> Template means normal HTML(actually Frontend in your application).But it will also have <a href="https://docs.djangoproject.com/en/4.0/ref/templates/language/" target="_blank">DTL</a>(Django Template Language).<br>
+                        If you want to introduce some dynamic data in your page that can be done with the help of DTL
+                    </p>
+                    <p class="lead">As a user you want to fetch data you are sending a request this request will go to your application.Suppose your application is Django-Based application. Whenever you build a project in django you will get very specific file that is <i>urls.py</i>. In this file you do all the mapping so from where you will get the request and then what will happen. So that navigation will be sent to the view</p>
+                    <h5 class="text-warning">Now What is View?!</h5>
+                    <p class="lead">
+                        <strong>View:</strong> The Business logic that we want to write will be done in view. This view actually use the model object and the template. <br>
+                        So what data has to be sent on the template will be decided by view.
+                    </p>
+
+                    <p class="lead text-center">
+                        To Recapitulate, <br>
+                        <b>Model works with Data</b> <br>
+                        <b>View works with Logic</b> <br>
+                        <b>Template works with Layout</b> <br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                          Reference
+                        </div>
+                        <div class="card-body">
+                          <h6 class="card-title">Image Source</h6>
+                          <p class="card-text"><a href="https://i0.wp.com/techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/Control-Flow-Of-MVT.jpg?ssl=1" target="_blank">https://i0.wp.com/techvidvan.com/tutorials/wp-content/uploads/sites/2/2021/06/Control-Flow-Of-MVT.jpg?ssl=1</a></p>
+                          <h6 class="card-title">Django Official Documents</h6>
+                          <p class="card-text"><a href="https://docs.djangoproject.com/en/4.0/" target="_blank">https://docs.djangoproject.com/en/4.0/</a></p>
+                         
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+</body>
+</html>
